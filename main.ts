@@ -13,7 +13,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
         . . # . .
         . # # # .
-        # # # # #
+        # . # . #
         . . # . .
         . . # . .
         `)
@@ -28,17 +28,42 @@ input.onButtonPressed(Button.B, function () {
         . . # . .
         `)
 })
+input.onGesture(Gesture.Shake, function () {
+    radio.sendString("reverse")
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+        `)
+    basic.pause(500)
+    basic.showLeds(`
+        . . # . .
+        . . # . .
+        # . # . #
+        . # # # .
+        . . # . .
+        `)
+    basic.pause(2000)
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+        `)
+})
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     radio.sendString("stop")
     basic.showLeds(`
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
         `)
 })
 basic.clearScreen()
 radio.setGroup(82)
-basic.showString("READY")
 basic.showIcon(IconNames.Yes)
