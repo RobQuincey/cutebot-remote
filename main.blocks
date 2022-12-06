@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id=",hdmr-Kb?gDS0$BtlSt3" x="0" y="0"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="radio_datagram_send_string" id="d,#-,F{xpCm~BQ//ieWD"><value name="msg"><shadow type="text" id="aqF_w7Y#-/A~$sqH0It="><field name="TEXT">forward</field></shadow></value><next><block type="device_show_leds" id="-RC,9R2@MFz+^C9G]Noy"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement></block><block type="input_logo_event" id="kY,GYMk{|/3.~^@RgG31" x="359" y="-10"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="radio_datagram_send_string" id="o3r7Kb`.M2yrDCAZ=AwV"><value name="msg"><shadow type="text" id="-{$6Q]`mjA#}zJ?#tGs+"><field name="TEXT">stop</field></shadow></value><next><block type="device_show_leds" id="F(1{r?NU?.!E[MjbQjl5"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></statement></block><block type="pxt-on-start" id="r{$h$LvyA@,_R/_8f0z-" x="681" y="-11"><statement name="HANDLER"><block type="device_clear_display" id="/SdL^O)[6tw0JdN)jq,5"><next><block type="radio_set_group" id="MRsq)hg(N%;;5MSS/.R0"><value name="ID"><shadow type="math_number_minmax" id="(T7gwT[J+;Q8)?z]lhCT"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">82</field></shadow></value><next><block type="device_print_message" id="$H68]b)CxTBH28DsQNu/"><value name="text"><shadow type="text" id="hn9Nn-4_yca0XvX;#Lfu"><field name="TEXT">READY</field></shadow></value><next><block type="basic_show_icon" id="yUd?HN+HI#o3W?)@xhyE"><field name="i">IconNames.Yes</field></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="egN_iDB_*m)TKYg@K4Aw" x="974" y="-8"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="radio_datagram_send_string" id="~PkqJ0J9k+~J-e_k`L3q"><value name="msg"><shadow type="text" id="F9n9cFS;$$@,h}rlKaZl"><field name="TEXT">left</field></shadow></value><next><block type="device_show_leds" id="uj!#?*FjP`li#b$RNFXU"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field></block></next></block></statement></block><block type="device_button_event" id="JLj}011OBGoNO{lAT7_N" x="635" y="294"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="radio_datagram_send_string" id="#]%NpEb1S?1!@]?EdQxj"><value name="msg"><shadow type="text" id="-?dpfk!)Gg@3n=BVwb_d"><field name="TEXT">right</field></shadow></value><next><block type="device_show_leds" id="8_50S],fh,K=F:b.FN|k"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field></block></next></block></statement></block></xml>
